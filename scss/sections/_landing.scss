@@ -3,14 +3,17 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 15px;
   &__h1 {
     margin-top: 130px;
     margin-bottom: 20px;
     font-family: $raleway;
     font-size: 3.063rem;
+    text-align: center;
   }
   &__paragraph {
     font-family: $open;
+    text-align: center;
   }
   &__button {
     width: 440px;
@@ -39,7 +42,7 @@
 .landing_background {
   width: 100%;
   //   height: 65vh;
-  background: transparent url(./scss/pics/Background.png) no-repeat center/cover;
+  //   background: transparent url(./scss/pics/Background.png) no-repeat center/cover;
   //   background: $color-black;
   // background-position: top;
   //   background-size: contain;
