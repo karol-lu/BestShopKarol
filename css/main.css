@@ -175,7 +175,7 @@ table {
   color: #a5a5a5;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 25px;
+  padding: 25px 25px;
   border-bottom: 4px solid transparent;
 }
 .top_menu__link:hover {
@@ -183,13 +183,6 @@ table {
   border-color: #08a6e4;
   cursor: pointer;
 }
-.top_menu li:first-of-type > .top_menu__link {
-  padding-left: 0px;
-}
-.top_menu li:nth-of-type(4) > .top_menu__link {
-  padding-right: 0px;
-}
-
 .container {
   max-width: 1352px;
   margin: 0 auto;
