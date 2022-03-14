@@ -1,5 +1,5 @@
 // Ścieżka do aktualnie wykonywanego zadania
-const entryPath = "workshop/BestShopKarol";
+const entryPath = "../BestShopKarol";
 
 const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));

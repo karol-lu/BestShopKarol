@@ -1,0 +1,21 @@
+@import "general/reset";
+
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/mixins";
+
+@import "sections/nav";
+@import "sections/landing";
+@import "sections/stats";
+@import "sections/portfolio";
+@import "sections/pricing";
+@import "sections/contact";
+@import "sections/footer";
+
+// @import "sections/";
+
+.container {
+  max-width: 1352px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
