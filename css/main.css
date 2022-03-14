@@ -155,6 +155,7 @@ table {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   color: #08a6e4;
+  padding-right: 136px;
 }
 
 .top_menu {
@@ -168,17 +169,25 @@ table {
   }
 }
 .top_menu__link {
+  width: 100%;
+  justify-content: space-between;
   font-family: "Raleway", sans-serif;
   color: #a5a5a5;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 25px 45.5px;
+  padding: 25px;
   border-bottom: 4px solid transparent;
 }
 .top_menu__link:hover {
   color: #000000;
   border-color: #08a6e4;
   cursor: pointer;
+}
+.top_menu li:first-of-type > .top_menu__link {
+  padding-left: 0px;
+}
+.top_menu li:nth-of-type(4) > .top_menu__link {
+  padding-right: 0px;
 }
 
 .container {

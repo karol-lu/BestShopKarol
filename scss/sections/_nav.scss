@@ -17,6 +17,7 @@
     font-family: $raleway;
     font-size: 2rem;
     color: $color-primary;
+    padding-right: 136px;
   }
 }
 
@@ -30,11 +31,13 @@
   &__item {
   }
   &__link {
+    width: 100%;
+    justify-content: space-between;
     font-family: $raleway;
     color: $color-grey;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 25px 45.5px;
+    padding: 25px;
     border-bottom: 4px solid transparent;
 
     &:hover {
@@ -42,5 +45,11 @@
       border-color: $color-primary;
       cursor: pointer;
     }
+  }
+  li:first-of-type > .top_menu__link {
+    padding-left: 0px;
+  }
+  li:nth-of-type(4) > .top_menu__link {
+    padding-right: 0px;
   }
 }
