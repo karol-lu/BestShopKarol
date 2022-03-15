@@ -1,4 +1,85 @@
-.stats_h2 {
-  font-family: $raleway;
-  font-size: 2.25rem;
+.stats {
+  display: block;
+  text-align: center;
+  &__h2 {
+    font-family: $raleway;
+    font-size: 2.25rem;
+    @include mobile {
+      padding: 13px 36px 25px;
+    }
+  }
+  &__tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+    }
+    &__single {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 95px 149px;
+      @include mobile {
+        padding: 0 36px 25px;
+      }
+    }
+    &__icon1,
+    &__icon2,
+    &__icon3 {
+      width: 62.71px;
+      height: 62.71px;
+      border-radius: 63px;
+      background-color: $color-redish;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        width: 52px;
+        height: 44px;
+        // background-image: url("../pics/Person.svg");
+        position: absolute;
+        z-index: 1;
+        right: -15px;
+        top: 10px;
+      }
+    }
+    &__icon1 {
+      &::before {
+        background-color: lime;
+        // background-image: url("../pics/Person.svg");
+      }
+    }
+    &__icon2 {
+      background-color: $color-primary;
+      &::before {
+        background-color: lightcoral;
+        // background-image: url("../pics/Eye.svg");
+      }
+    }
+    &__icon3 {
+      background-color: $color-green;
+      &::before {
+        background-color: olive;
+        // background-image: url("../pics/Catalog.svg");
+      }
+    }
+
+    &__numbers {
+      font-family: $raleway;
+      font-size: 1.25rem;
+      font-weight: bolder;
+      margin-top: 15px;
+      margin-bottom: 19px;
+    }
+    &__details {
+      font-family: $raleway;
+      font-size: 1.063rem;
+      color: $color-grey;
+    }
+  }
 }

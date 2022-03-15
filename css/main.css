@@ -236,9 +236,87 @@ table {
   }
 }
 
-.stats_h2 {
+.stats {
+  display: block;
+  text-align: center;
+}
+.stats__h2 {
   font-family: "Raleway", sans-serif;
   font-size: 2.25rem;
+}
+@media (max-width: 800px) {
+  .stats__h2 {
+    padding: 13px 36px 25px;
+  }
+}
+.stats__tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .stats__tile {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.stats__tile__single {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 95px 149px;
+}
+@media (max-width: 800px) {
+  .stats__tile__single {
+    padding: 0 36px 25px;
+  }
+}
+.stats__tile__icon1, .stats__tile__icon2, .stats__tile__icon3 {
+  width: 62.71px;
+  height: 62.71px;
+  border-radius: 63px;
+  background-color: #fb3b64;
+  position: relative;
+}
+.stats__tile__icon1::before, .stats__tile__icon2::before, .stats__tile__icon3::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 44px;
+  position: absolute;
+  z-index: 1;
+  right: -15px;
+  top: 10px;
+}
+.stats__tile__icon1::before {
+  background-color: lime;
+}
+.stats__tile__icon2 {
+  background-color: #08a6e4;
+}
+.stats__tile__icon2::before {
+  background-color: lightcoral;
+}
+.stats__tile__icon3 {
+  background-color: #55dfb4;
+}
+.stats__tile__icon3::before {
+  background-color: olive;
+}
+.stats__tile__numbers {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  margin-top: 15px;
+  margin-bottom: 19px;
+}
+.stats__tile__details {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.063rem;
+  color: #a5a5a5;
 }
 
 .container {
