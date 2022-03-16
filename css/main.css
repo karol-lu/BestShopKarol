@@ -319,6 +319,39 @@ table {
   color: #a5a5a5;
 }
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.portfolio__tile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+}
+@media (max-width: 800px) {
+  .portfolio__tile {
+    flex-direction: column-reverse;
+  }
+}
+.portfolio__tile__text {
+  max-width: 416px;
+}
+.portfolio__tile__text__h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.25rem;
+}
+.portfolio__tile__text__paragraph {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  padding: 10px 0;
+}
+.portfolio__tile__picture1, .portfolio__tile__picture2, .portfolio__tile__picture3 {
+  width: 180px;
+  height: 180px;
+  background-color: #ff22ff;
+}
 .container {
   max-width: 1352px;
   margin: 0 auto;

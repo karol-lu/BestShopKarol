@@ -1,0 +1,35 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  &__tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+    &__text {
+      max-width: 416px;
+      &__h3 {
+        font-family: $raleway;
+        font-size: 2.25rem;
+      }
+      &__paragraph {
+        font-family: $open;
+        text-align: left;
+        padding: 10px 0;
+      }
+    }
+    &__picture1,
+    &__picture2,
+    &__picture3 {
+      width: 180px;
+      height: 180px;
+      background-color: rgb(255, 34, 255);
+    }
+  }
+  @include mobile {
+  }
+}
