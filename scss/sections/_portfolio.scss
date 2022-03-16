@@ -1,35 +1,142 @@
+.portfolio__background {
+  width: 100%;
+  height: 1350px;
+  background-color: $color-light-grey;
+}
 .portfolio {
   display: flex;
   flex-direction: column;
+  background-color: $color-light-grey;
   &__tile {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 30px;
+    border: 1px solid #e8e9ed;
+    border-radius: 5px;
+    background-color: $color-white;
     @include mobile {
       flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      max-width: 416px;
     }
     &__text {
       max-width: 416px;
+      padding: 0 100px;
+      @include mobile {
+        max-width: 272px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-start;
+        align-items: flex-start;
+        padding: 27px 21px 10px;
+        @include mobile {
+          padding-left: 0px;
+        }
+      }
       &__h3 {
         font-family: $raleway;
         font-size: 2.25rem;
+        margin-bottom: 30px;
+        @include mobile {
+          text-align: left;
+        }
       }
       &__paragraph {
         font-family: $open;
-        text-align: left;
+        // text-align: left;
         padding: 10px 0;
       }
     }
     &__picture1,
     &__picture2,
     &__picture3 {
+      margin: 38px 0;
+      margin-right: 71px;
+      @include mobile {
+        margin: 0 auto;
+      }
+    }
+    &__picture1 {
       width: 180px;
       height: 180px;
-      background-color: rgb(255, 34, 255);
+      border-radius: 21px;
+      background-color: $color-redish;
+      transform: rotate(45deg);
+      @include mobile {
+        width: 90px;
+        height: 90px;
+        margin: 30px;
+      }
+    }
+    &__picture2 {
+      width: 320px;
+      height: 320px;
+      border-radius: 320px;
+      background-color: $color-primary;
+      @include mobile {
+        width: 131px;
+        height: 131px;
+        margin: 12px;
+      }
+    }
+    &__picture3 {
+      width: 440px;
+      height: 370px;
+      border-radius: 5px;
+      background-color: $color-green;
+      @include mobile {
+        width: 314px;
+        height: 195px;
+      }
+    }
+    .underscore1,
+    .underscore2,
+    .underscore3 {
+      width: 327px;
+      border-bottom: 4px solid $color-redish;
+      margin-top: 50px;
+      @include mobile {
+        display: none;
+      }
+    }
+    .underscore2 {
+      border-color: $color-primary;
+    }
+    .underscore3 {
+      border-color: $color-green;
     }
   }
   @include mobile {
   }
+}
+.separator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-light-grey;
+  border: 0px none transparent;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+.separator > .portfolio__tile__text {
+  align-items: center;
+  justify-content: center;
+  height: 370px;
+  margin-right: 60px;
+  border: 1px solid #e8e9ed;
+  background-color: $color-white;
+
+  @include mobile {
+  }
+}
+.separator .portfolio__tile__text__h3 {
+  margin-top: 70px;
+}
+.separator > .portfolio__tile__picture3 {
+  border: 1px solid #e8e9ed;
+  //   background-color: $color-white;
 }
