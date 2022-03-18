@@ -1,10 +1,74 @@
 .pricing {
+  display: flex;
+  //   flex-direction: column;
+  justify-content: space-around;
+
   &__h3 {
-    font-size: 2.625rem;
+    display: flex;
+    justify-content: center;
+
+    font-size: 2.25rem;
+    font-family: $raleway;
   }
-}
-.pricing__tile {
-  &__h3 {
-    color: red;
+  .pricing__tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 372px;
+    height: 461px;
+    border: 1px solid $color-redish;
+    border-radius: 18px;
+    //   position: absolute;
+
+    &:hover {
+      width: 405px;
+      height: 500px;
+      box-shadow: lime 5px 10px 27px;
+    }
+
+    &__option {
+      font-size: 1.25rem;
+      font-family: $raleway;
+      font-weight: bold;
+      margin-top: 51px;
+      margin-bottom: 14px;
+    }
+    &__amount {
+      color: red;
+      font-size: 2.875rem;
+      font-family: $open;
+      margin-bottom: 69px;
+    }
+    &__list {
+      list-style: none;
+      &__item {
+        font-size: 0.875rem;
+        font-family: $open;
+        margin-bottom: 20px;
+      }
+    }
+    &__button {
+      width: 40.3%;
+      height: 50px;
+      border-radius: 23px;
+      border: none;
+      color: #fff;
+      font-size: 0.813rem;
+      font-family: $open;
+      font-weight: bold;
+      position: relative;
+      top: 30px;
+
+      &:hover {
+        top: 69px;
+      }
+    }
+  }
+
+  .pricing__tile__list > li:last-of-type {
+    margin-bottom: 55px;
+  }
+  .first__button {
+    background-color: $color-redish;
   }
 }

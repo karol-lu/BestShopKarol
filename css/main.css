@@ -477,12 +477,71 @@ table {
   border: 1px solid #e8e9ed;
 }
 
-.pricing__h3 {
-  font-size: 2.625rem;
+.pricing {
+  display: flex;
+  justify-content: space-around;
 }
-
-.pricing__tile__h3 {
+.pricing__h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.25rem;
+  font-family: "Raleway", sans-serif;
+}
+.pricing .pricing__tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 372px;
+  height: 461px;
+  border: 1px solid #fb3b64;
+  border-radius: 18px;
+}
+.pricing .pricing__tile:hover {
+  width: 405px;
+  height: 500px;
+  box-shadow: lime 5px 10px 27px;
+}
+.pricing .pricing__tile__option {
+  font-size: 1.25rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-top: 51px;
+  margin-bottom: 14px;
+}
+.pricing .pricing__tile__amount {
   color: red;
+  font-size: 2.875rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 69px;
+}
+.pricing .pricing__tile__list {
+  list-style: none;
+}
+.pricing .pricing__tile__list__item {
+  font-size: 0.875rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+.pricing .pricing__tile__button {
+  width: 40.3%;
+  height: 50px;
+  border-radius: 23px;
+  border: none;
+  color: #fff;
+  font-size: 0.813rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 30px;
+}
+.pricing .pricing__tile__button:hover {
+  top: 69px;
+}
+.pricing .pricing__tile__list > li:last-of-type {
+  margin-bottom: 55px;
+}
+.pricing .first__button {
+  background-color: #fb3b64;
 }
 
 .container {
